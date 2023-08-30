@@ -1,2 +1,3 @@
 # Сайт интернет магазина
-[Верстка] (https://hicio.github.io/Onot1)
+Верстка, [интернет магазина]((https://hicio.github.io/Onot1)https://hicio.github.io/Onot1)!
+
