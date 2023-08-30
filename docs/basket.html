@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+  <header id="header" class="header header__white">
+
+    <div id="search" class="fancybox_popap" style="display:none; max-width: 1100px;">
+      <div class="search__inner">
+        <form action="">
+          <input class="search-input" type="search" name="поиск" value="" placeholder="Поиск по сайту">
+          <input class="search-btn" type="submit">
+          <button data-fancybox-close="" type="button" class="search-clous">Закрыть и очистить</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class="header__container">
+      <div class="header__row flex-vcenter">
+        <a href="/" class="header__logo"><img width="132" height="67" src="img/header/logo_black.svg"
+            alt="Логотип сайта"></a>
+        <div class="header__menu menu list_reset flex-vcenter">
+          <button type="button" class="menu__icon icon-menu">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2H26" stroke="" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 10H26" stroke="" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 17.9999H26" stroke="" stroke-width="4" stroke-linecap="round" />
+              <path d="M2 26.0001H26" stroke="" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </button>
+          <nav class="menu__body ">
+            <ul>
+              <li class="menu__item"><a href="#!" class="">Каталог</a></li>
+              <li class="menu__item"><a href="#!" class="">Новинки</a></li>
+              <li class="menu__item"><a href="#!" class="">HIT</a></li>
+              <li class="menu__item"><a href="#!" class="">SALE</a></li>
+              <li class="menu__item"><a href="#!" class="">О БРЕНДЕ</a></li>
+              <li class="menu__item submenu__link">
+                <a href="#!" class="">покупателю</a>
+                <div class="submenu__inner">
+                  <ul class="submenu">
+                    <li class="submenu__item"><a href="#!">Доставка и оплата</a></li>
+                    <li class="submenu__item"><a href="#!">Возврат и обмен</a></li>
+                    <li class="submenu__item"><a href="#!">Вопросы и ответы</a></li>
+                    <li class="submenu__item"><a href="#!">Программа лояльности</a></li>
+                  </ul>
+                </div>
+
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="header__social flex-vcenter">
+          <li class="submenu__link">
+            <a class="" href="#!">
+              <svg id="user-black" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.8554 3.91303C14.8554 4.70444 14.401 5.49077 13.5252 6.10767C12.6513 6.72322 11.4071 7.12607 9.99989 7.12607C8.59271 7.12607 7.34853 6.72322 6.47461 6.10767C5.59876 5.49077 5.14434 4.70444 5.14434 3.91303C5.14434 3.12163 5.59876 2.33529 6.47461 1.71839C7.34853 1.10285 8.59271 0.7 9.99989 0.7C11.4071 0.7 12.6513 1.10285 13.5252 1.71839C14.401 2.33529 14.8554 3.12163 14.8554 3.91303Z"
+                  stroke="black" stroke-width="1.4" />
+                <mask id="path-2-inside-1_1_10809" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 19.999H20C19.9999 13.7561 18.125 8.69531 10 8.69531C1.87502 8.69531 0.000121616 13.7561 0 19.999Z" />
+                </mask>
+                <path
+                  d="M0 19.999L-1.4 19.999L-1.40003 21.399H0V19.999ZM20 19.999V21.399H21.4L21.4 19.999L20 19.999ZM0 21.399H20V18.599H0V21.399ZM10 10.0953C13.7522 10.0953 15.7645 11.2446 16.9137 12.8283C18.1324 14.5077 18.5999 16.9629 18.6 19.9991L21.4 19.999C21.3999 16.7922 20.93 13.5955 19.1799 11.1838C17.3604 8.67639 14.3728 7.29531 10 7.29531V10.0953ZM1.4 19.9991C1.40006 16.9629 1.86761 14.5077 3.08628 12.8283C4.23548 11.2446 6.24782 10.0953 10 10.0953V7.29531C5.6272 7.29531 2.6396 8.67639 0.820073 11.1838C-0.92998 13.5955 -1.39994 16.7922 -1.4 19.999L1.4 19.9991Z"
+                  fill="black" mask="url(#path-2-inside-1_1_10809)" />
+              </svg>
+            </a>
+            <div class="submenu__inner">
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#!">Профиль</a></li>
+                <li class="submenu__item"><a href="#!">Мои заказы</a></li>
+                <li class="submenu__item"><a href="#!">Мои адреса</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="search__link">
+            <a data-fancybox data-src="#search" data-animation-effect="false" href="#!">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.8 8.23529C16.8 12.3575 13.2365 15.7706 8.75 15.7706C4.26352 15.7706 0.7 12.3575 0.7 8.23529C0.7 4.11304 4.26352 0.7 8.75 0.7C13.2365 0.7 16.8 4.11304 16.8 8.23529Z"
+                  stroke="black" stroke-width="1.4" />
+                <path d="M13.75 14.1172L20 19.9995" stroke="black" stroke-width="1.4" stroke-linecap="round" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.5499 12.8399C16.4055 11.8382 17.3719 10.6153 18.0568 9.13353C18.3206 8.5628 18.5877 7.88506 18.5739 7.17406C18.534 5.29028 17.9125 3.80079 16.6727 2.62415C16.0063 1.99076 15.1469 1.64225 14.2523 1.64225C13.2146 1.64225 12.2143 2.11319 11.5072 2.93313C11.17 3.32551 10.8936 3.78633 10.6403 4.3802C10.5386 4.61884 10.3446 4.78253 10.1213 4.82675C10.0856 4.8338 10.0493 4.83782 10.0124 4.83861C9.96994 4.83741 9.92737 4.83216 9.88533 4.82299C9.67419 4.77693 9.47649 4.63207 9.37156 4.40574L9.24909 4.14014C8.52728 2.54992 7.24933 1.63405 5.80655 1.63405C5.57378 1.63405 5.33765 1.65816 5.10446 1.70732C3.88732 1.96135 2.92771 2.73743 2.25161 4.01385C1.2467 5.90921 1.15653 7.55872 1.96725 9.20246C2.47935 10.2412 3.15083 11.2617 4.02028 12.3236C5.63082 14.2922 7.53621 16.1717 9.99774 18.2184C12.2596 16.3414 14.0149 14.6388 15.5499 12.8399ZM10.9323 1.32926C11.8576 0.481058 13.0383 0.0052637 14.2523 0.0052637C15.4778 0.0052637 16.6601 0.486333 17.5807 1.36171C19.1363 2.83817 19.9496 4.78125 19.9991 7.13694C20.0213 8.23164 19.6455 9.18992 19.3158 9.90189C18.5466 11.5683 17.4947 12.9025 16.5678 13.9881C14.9078 15.9331 13.0091 17.7614 10.5921 19.745L10.5898 19.7469C10.4956 19.8271 10.3126 19.9828 10.0447 19.9987C10.0302 19.9996 10.0153 20 10.0003 20C9.98297 20 9.96573 19.9994 9.94857 19.9983C9.77596 19.9865 9.61025 19.9159 9.45461 19.7874C6.77582 17.5865 4.71902 15.5716 2.98139 13.4487C2.03268 12.2899 1.29535 11.1658 0.727047 10.0123C-0.336164 7.85614 -0.232569 5.55154 1.03322 3.1621C1.93034 1.46968 3.215 0.437648 4.84904 0.0968503C6.36659 -0.221886 7.89709 0.260426 9.06467 1.33264C9.41211 1.6517 9.72742 2.023 10.0007 2.44098C10.1546 2.20382 10.3186 1.98546 10.4935 1.78204C10.632 1.62116 10.7786 1.47008 10.9323 1.32926Z"
+                  fill="black" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_1_10819" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20 20.0003H0V5.42188H20V20.0003ZM1.25786 18.959H18.7421V6.46319H1.25786V18.959Z" />
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20 20.0003H0V5.42188H20V20.0003ZM1.25786 18.959H18.7421V6.46319H1.25786V18.959Z" fill="black" />
+                <path
+                  d="M20 20.0003V21.4003H21.4V20.0003H20ZM0 20.0003H-1.4V21.4003H0V20.0003ZM0 5.42188V4.02188H-1.4V5.42188H0ZM20 5.42188H21.4V4.02188H20V5.42188ZM1.25786 18.959H-0.142138V20.359H1.25786V18.959ZM18.7421 18.959V20.359H20.1421V18.959H18.7421ZM18.7421 6.46319H20.1421V5.06319H18.7421V6.46319ZM1.25786 6.46319V5.06319H-0.142138V6.46319H1.25786ZM20 18.6003H0V21.4003H20V18.6003ZM1.4 20.0003V5.42188H-1.4V20.0003H1.4ZM0 6.82187H20V4.02188H0V6.82187ZM18.6 5.42188V20.0003H21.4V5.42188H18.6ZM1.25786 20.359H18.7421V17.559H1.25786V20.359ZM20.1421 18.959V6.46319H17.3421V18.959H20.1421ZM18.7421 5.06319H1.25786V7.86319H18.7421V5.06319ZM-0.142138 6.46319V18.959H2.65786V6.46319H-0.142138Z"
+                  fill="black" mask="url(#path-1-inside-1_1_10819)" />
+                <mask id="path-3-inside-2_1_10819" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.276 5.4545H14.9254V3.11686C14.9254 1.87589 13.3496 0.865794 11.4137 0.865794H8.89255C6.95664 0.865794 5.3809 1.87589 5.3809 3.11686L5.3809 5.4545H4.03027V3.11686C4.03027 1.38527 6.19128 0 8.89255 0H11.4137C14.115 0 16.276 1.38527 16.276 3.11686V5.4545Z" />
+                </mask>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.276 5.4545H14.9254V3.11686C14.9254 1.87589 13.3496 0.865794 11.4137 0.865794H8.89255C6.95664 0.865794 5.3809 1.87589 5.3809 3.11686L5.3809 5.4545H4.03027V3.11686C4.03027 1.38527 6.19128 0 8.89255 0H11.4137C14.115 0 16.276 1.38527 16.276 3.11686V5.4545Z"
+                  fill="black" />
+                <path
+                  d="M16.276 5.4545V6.8545H17.676V5.4545H16.276ZM14.9254 5.4545H13.5254V6.8545H14.9254V5.4545ZM5.3809 3.11686H3.9809V3.11686L5.3809 3.11686ZM5.3809 5.4545V6.8545H6.7809V5.4545H5.3809ZM4.03027 5.4545H2.63027V6.8545H4.03027V5.4545ZM16.276 4.0545H14.9254V6.8545H16.276V4.0545ZM16.3254 5.4545V3.11686H13.5254V5.4545H16.3254ZM16.3254 3.11686C16.3254 1.855 15.5272 0.908983 14.651 0.347332C13.7584 -0.224901 12.6098 -0.534206 11.4137 -0.534206V2.26579C12.1536 2.26579 12.7608 2.46153 13.14 2.70459C13.3267 2.82431 13.4304 2.93708 13.481 3.01367C13.5273 3.08362 13.5254 3.11481 13.5254 3.11686H16.3254ZM11.4137 -0.534206H8.89255V2.26579H11.4137V-0.534206ZM8.89255 -0.534206C7.6965 -0.534206 6.5479 -0.224901 5.65523 0.347332C4.77905 0.908983 3.9809 1.855 3.9809 3.11686H6.7809C6.7809 3.11481 6.77898 3.08362 6.82522 3.01367C6.87585 2.93708 6.97954 2.82431 7.1663 2.70459C7.54546 2.46153 8.15269 2.26579 8.89255 2.26579V-0.534206ZM3.9809 3.11686L3.9809 5.4545H6.7809L6.7809 3.11686L3.9809 3.11686ZM5.3809 4.0545H4.03027V6.8545H5.3809V4.0545ZM5.43027 5.4545V3.11686H2.63027V5.4545H5.43027ZM5.43027 3.11686C5.43027 2.88558 5.57412 2.49146 6.20397 2.08771C6.82195 1.69157 7.76566 1.4 8.89255 1.4V-1.4C7.31817 -1.4 5.83074 -0.998936 4.6929 -0.269546C3.56693 0.452233 2.63027 1.61655 2.63027 3.11686H5.43027ZM8.89255 1.4H11.4137V-1.4H8.89255V1.4ZM11.4137 1.4C12.5406 1.4 13.4843 1.69157 14.1023 2.08771C14.7321 2.49146 14.876 2.88558 14.876 3.11686H17.676C17.676 1.61655 16.7393 0.452233 15.6134 -0.269546C14.4755 -0.998936 12.9881 -1.4 11.4137 -1.4V1.4ZM14.876 3.11686V5.4545H17.676V3.11686H14.876Z"
+                  fill="black" mask="url(#path-3-inside-2_1_10819)" />
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="header__col menu__mobile">
+        <button type="button" class="menu__mobile--clouse">
+          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10.016" y1="10.5287" x2="19.178" y2="20.1821" stroke="black" />
+            <line x1="19.1781" y1="20.182" x2="29.8671" y2="31.4443" stroke="black" />
+            <line x1="30.7432" y1="10.1515" x2="19.4054" y2="20.8883" stroke="black" />
+            <line x1="19.1628" y1="20.8859" x2="9.58931" y2="30.1322" stroke="black" />
+          </svg>
+        </button>
+        <div class="menu__mobile__cat">
+          <ul>
+            <li><a href="#!">АКЦИИ</a></li>
+            <li><a href="#!">НОВИНКИ</a></li>
+            <li><a href="#!">ФУТБОЛКИ</a></li>
+            <li><a href="#!">ХУДИ И СВИТШОТЫ</a></li>
+            <li><a href="#!">РУБАШКИ И ВОДОЛАЗКИ</a></li>
+            <li><a href="#!">БРЮКИ</a></li>
+            <li><a href="#!">ШОРТЫ</a></li>
+            <li><a href="#!">КУРТКИ И БОМБЕРЫ</a></li>
+          </ul>
+        </div>
+        <div class="menu__mobile__page flex-col">
+          <a href="#!">ОПЛАТА И ДОСТАВКА</a>
+          <a href="#!">КАК ОФОРМИТЬ ЗАКАЗ</a>
+          <a href="#!">ВОЗВРАТ И ОБМЕН</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main class="main _js_top_padding">
+    <!--  -->
+    <div id="breadcrumbs">
+      <div class="breadcrumbs__container text-center">
+        <div class="breadcrumbs">
+          <ul itemscope="" itemtype="http://schema.org/BreadcrumbList" class="flex-center">
+            <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <a class="breadcrumbs__link" rel="nofollow" itemprop="item" title="Главная" href="/">
+                <span itemprop="name">Главная</span>
+                <meta itemprop="position" content="1">
+              </a>
+            </li>
+
+            <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+              <span itemprop="item" title="Корзина" class="breadcrumbs_last">
+                <span itemprop="name">Корзина</span>
+                <meta itemprop="position" content="2">
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Заголовок товара -->
+    <div class="basket__header__container">
+      <div class="basket__title title text-center">
+        <h1>Корзина</h1>
+      </div>
+    </div>
+
+
+    <form action="">
+      <div class="basket__inner basket__container flex-top">
+        <div class="basket__list">
+          <!-- Товар №1 -->
+          <div class="basket__item">
+            <div class="basket__item__inner flex-top">
+              <a class="basket__item__link-img" href="#!">
+                <img width="163" height="217" src="img/cart/1.webp" alt="Футболка с карманом 0 not 1"></a>
+              <div class="basket__item__content flex-col">
+                <div class="basket__item__name"><a href="#!">Футболка с карманом 0 not 1</a></div>
+                <div class="basket__item__data_list">
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Артикул</div>
+                    <div class="value">999900002120</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Цвет</div>
+                    <div class="value">белый</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Размер</div>
+                    <div class="value">L</div>
+                  </div>
+                </div>
+
+                <div class="basket__item__price">
+                  <div class="price__list">
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Цена</div>
+                      <div class="value">10 990</div>
+                    </div>
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Кол - во</div>
+                      <div class="value">
+                        <div class="number flex-vcenter">
+                          <button class="number-minus" type="button"
+                            onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                          <input type="number" min="0" value="1" readonly>
+                          <button class="number-plus" type="button"
+                            onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price__list__item price-total-item flex-vcenter">
+                      <div class="name">Сумма</div>
+                      <div class="value">10 999</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Товар №2 -->
+          <div class="basket__item">
+            <div class="basket__item__inner flex-top">
+              <a class="basket__item__link-img" href="#!">
+                <img width="163" height="217" src="img/cart/1.webp" alt="Футболка с карманом 0 not 1"></a>
+              <div class="basket__item__content flex-col">
+                <div class="basket__item__name"><a href="#!">Футболка с карманом 0 not 1</a></div>
+                <div class="basket__item__data_list">
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Артикул</div>
+                    <div class="value">999900002120</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Цвет</div>
+                    <div class="value">белый</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Размер</div>
+                    <div class="value">L</div>
+                  </div>
+                </div>
+
+                <div class="basket__item__price">
+                  <div class="price__list">
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Цена</div>
+                      <div class="value">10 990</div>
+                    </div>
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Кол - во</div>
+                      <div class="value">
+                        <div class="number flex-vcenter">
+                          <button class="number-minus" type="button"
+                            onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                          <input type="number" min="0" value="1" readonly>
+                          <button class="number-plus" type="button"
+                            onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price__list__item price-total-item flex-vcenter">
+                      <div class="name">Сумма</div>
+                      <div class="value">10 999</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Товар №3 -->
+          <div class="basket__item">
+            <div class="basket__item__inner flex-top">
+              <a class="basket__item__link-img" href="#!">
+                <img width="163" height="217" src="img/cart/1.webp" alt="Футболка с карманом 0 not 1"></a>
+              <div class="basket__item__content flex-col">
+                <div class="basket__item__name"><a href="#!">Футболка с карманом 0 not 1</a></div>
+                <div class="basket__item__data_list">
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Артикул</div>
+                    <div class="value">999900002120</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Цвет</div>
+                    <div class="value">белый</div>
+                  </div>
+                  <div class="basket__item__data__item  flex-vcenter">
+                    <div class="name">Размер</div>
+                    <div class="value">L</div>
+                  </div>
+                </div>
+
+                <div class="basket__item__price">
+                  <div class="price__list">
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Цена</div>
+                      <div class="value">10 990</div>
+                    </div>
+                    <div class="price__list__item flex-vcenter">
+                      <div class="name">Кол - во</div>
+                      <div class="value">
+                        <div class="number flex-vcenter">
+                          <button class="number-minus" type="button"
+                            onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                          <input type="number" min="0" value="1" readonly>
+                          <button class="number-plus" type="button"
+                            onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price__list__item price-total-item flex-vcenter">
+                      <div class="name">Сумма</div>
+                      <div class="value">10 999</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.basket__list -->
+
+
+        <div class="basket__total flex-col">
+          <div class="basket__total__price">
+            Итого: 999 999
+          </div>
+          <div class="basket__total__delivery flex-col">
+            <label class="costum_checkbox costum_radio">
+              <input type="radio" name="delivery" value="Доставка">
+              <span>Доставка</span>
+            </label>
+            <label class="costum_checkbox costum_radio">
+              <input type="radio" name="delivery" value="Самовывоз из пунктов выдачи">
+              <span>Самовывоз из пунктов выдачи</span>
+            </label>
+          </div>
+          <div class="basket__total__btn flex-col">
+            <input class="btn-black" type="submit" value="Оформить заказ">
+            <a class="btn-border" href="#!">Продолжить покупки</a>
+            <a class="basket__empty-cart" href="#!">Очиститить корзину</a>
+          </div>
+        </div><!-- /.basket__total -->
+
+
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="footer _padding">
+    <div class="footer__container">
+      <div class="footer__inner flex-top">
+
+        <div class="footer__item footer__logo">
+          <img width="182" height="32" src="img/header/logo_white.svg" alt="">
+        </div>
+
+        <div class="footer__item footer__nav">
+          <div class="footer__nav__title">Каталог</div>
+          <ul>
+            <li><a href="#!">Новинки</a></li>
+            <li><a href="#!">Sale</a></li>
+            <li><a href="#!">Hit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__item footer__nav flex-col">
+          <div class="footer__nav__title">О нас</div>
+          <ul>
+            <li><a href="#!">Как оформить заказ</a></li>
+            <li><a href="#!">Возврат и обмен</a></li>
+            <li><a href="#!">Оплата и доставка</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__item footer__nav footer__nav_contakts flex-col">
+          <div class="footer__nav__title">Контакты</div>
+          <address>
+            <a href="#!">telegram</a>
+            <a href="mailto:0not1@mail.ru">0not1@mail.ru</a>
+            <a href="tel:89999999999 ">8 999 999 99 99 </a>
+          </address>
+        </div>
+
+        <div class="footer__item footer__nav footer__nav_solial flex-col">
+          <div class="footer__nav__title">Соц сети</div>
+          <a href="#!">vk.0not1.com</a>
+          <a href="#!">instagram</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/query-3.7.0.min.js"></script>
+  <script src="libs/jquery.inputmask.min.js"></script>
+  <script src="libs/fancybox/fancybox.umd.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
